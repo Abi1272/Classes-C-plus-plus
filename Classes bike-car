@@ -1,0 +1,84 @@
+#include <iostream>
+using namespace std;
+
+// The Car class definition
+class Car {
+public:
+    // Attributes (variables) of a car
+    string color;
+    int year;
+    string make;
+
+    // Constructor to initialize the Car object
+    Car(string c, int y, string m) {
+        color = c;  // Set the color of the car
+        year = y;   // Set the year of the car
+        make = m;   // Set the make of the car
+    }
+
+    // Function to display the details of the car
+    void displayDetails() {
+        cout << "Car details: " << endl;
+        cout << "Color: " << color << endl;
+        cout << "Year: " << year << endl;
+        cout << "Make: " << make << endl << endl;
+    }
+};
+
+class Bike {
+public:
+    // Attributes (variables) of a car
+    string color;
+    string Type;
+    char frame;
+
+    // Constructor to initialize the Car object
+    Bike(string z, string t, char f) {
+        color = z;  // Set the color of the car
+        Type = t;   // Set the year of the car
+        frame = f;   // Set the make of the car
+    }
+
+    // Function to display the details of the car
+    void displayDetails() {
+        cout << "Bike details: " << endl;
+        cout << "Color: " << color << endl;
+        cout << "Area: " << Type << endl;
+        cout << "Frame: " << frame << endl << endl;
+    }
+};
+
+
+
+int main() {
+    // Creating an object of Car
+    Bike myBike("Red", "mountains", 's');
+
+    // Creating another object of Car
+    Bike mySecondBike("Blue", "racing", 'm');
+
+    // Creating another object of Car
+    Bike myThirdBike("Pink", "BMX", 'l');
+
+    // Display details of cars
+
+    // Creating an object of Car
+    Car myCar("Red", 2021, "Toyota");
+
+    // Creating another object of Car
+    Car mySecondCar("Blue", 2019, "Ford");
+
+    // Creating another object of Car
+    Car myThirdCar("Pink", 2024, "porsche");
+
+    // Display details of cars
+    myCar.displayDetails();
+    mySecondCar.displayDetails();
+    myThirdCar.displayDetails();
+    myBike.displayDetails();
+    mySecondBike.displayDetails();
+    myThirdBike.displayDetails();
+
+    return 0;
+}
+
